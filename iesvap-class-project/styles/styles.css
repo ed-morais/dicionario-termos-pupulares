@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  min-width: 320px;
+}
+
+nav {
+  height: 10vh;
+  background-color: #1976D2;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-links li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+
+/*  CONTENT  */
+ 
+
+#page-wrap {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.main {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  text-align: center; 
+}
+
+
+.container h1 {
+  color: rgb(43, 43, 43);
+  padding: 2rem;
+}
+
+.container p {
+  color: #6b6b6b;
+  padding-bottom: 3rem;
+  text-align: justify;
+}
+
+
+
+.container-red h1 {
+  color: white;
+  padding: 2rem;
+}
+
+.container-red p {
+  color: white;
+  padding-bottom: 3rem;
+  text-align: justify;
+}
+
+#video1 {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+/* INTRO */
+
+.container-intro h1 {
+  color: rgb(43, 43, 43);
+  padding: 2rem;
+}
+
+.container-intro p {
+  color: #6b6b6b;
+  padding-bottom: 1rem;
+  text-align: justify;
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-indent: 1rem;
+}
+
+#thanks {
+  margin-bottom: 50px;
+}
+
+.intro img {
+  width: 75%;
+  height: auto;
+  max-width: 800px;
+  align-self: center;
+  vertical-align: middle;
+  padding-bottom: 2rem;
+}
+
+/* TOUR */
+#dicionario {
+  width: 100vw;
+  height: 100vh;
+  background: #6b6b6b;
+}
+
+#dicionario iframe{
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* VIDEOS */
+.videos iframe {
+  width: 90vw;
+  height: 40vh;
+  margin: 0 auto;
+  max-width: 800px;
+
+}
+#videoyoutube {
+  position: relative;
+  top: 3vh;
+}
+@media screen and (max-width: 3000px) {
+  .container {
+    height: 100vh;
+    margin: 0 auto;
+  }
+  
+  .red-background {
+    width: 100vw;
+    background: #319ffe;
+  }
+  
+  .container-red {
+    background: #319ffe;
+    height: 100vh;
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .dicionario iframe {
+    width: 90vw;
+    height: 85vh;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+}
+
+
+@media screen and (max-width: 1800px) {
+  .container {
+    height: 100vh;
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .red-background {
+    width: 100vw;
+    background:#319ffe;
+  }
+  
+  .container-red {
+    background: #319ffe;
+    height: 100vh;
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  #dicionario {
+    width: 100vw;
+    height: 100vh;
+    background: #6b6b6b;
+  }
+  
+  #dicionario iframe{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px){
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .hamburguer {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #1976D2;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
+    pointer-events: all;
+  }
+
+  .container {
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .red-background {
+    width: 100vw;
+    background: #319ffe;
+  }
+  
+  .container-red {
+    background: #319ffe;
+    height: 100vh;
+    min-height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .tour img {
+    width: 100%;
+  }
+
+  
+  .intro img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #dicionario {
+    width: 100%;
+    height: 100%;
+    background: #6b6b6b;
+  }
+  
+  #dicionario iframe{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+  }
+
+}
+
+
+
+
+
