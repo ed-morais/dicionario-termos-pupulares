@@ -10,20 +10,6 @@ hamburger.addEventListener("click", () => {
   });
 });
 
-anchor.addEventListener("click", () => {
-    anchor.classList.toggle("open");
-  });
-  
-// links.addEventListener("click", () => {
-//     links.forEach(link => {
-//         link.classList.toggle("close");
-//       });
-//   });
-
-// $('.hamburger').on('click', function () {
-//     $('.nav-links').addClass('open');
-//   });
-
-// $( '.nav-links a' ).on("click", function(){
-//     $('.nav-links').removeClass('open');
-//   });
+$( '.nav-links li a' ).on("click", function(){
+  $('#hamburgerID').click();
+});
