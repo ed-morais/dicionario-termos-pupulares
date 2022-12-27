@@ -5,5 +5,5 @@ Overall, the dictionary of popular terms github repository is a valuable resourc
 
 <p align="center">Images:</p></br>
 <p align="center">
-  <img src="screen-recording.gif" width="300" style="display: block; margin: 0 auto"> </br>
+  <img src="screen-recording.gif" width="350" style="display: block; margin: 0 auto"> </br>
 </p>
